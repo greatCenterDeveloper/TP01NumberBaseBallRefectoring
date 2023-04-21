@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_baseball">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="숫자로 하는 야구 게임"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aaa"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_ball">
+
+        <EditText
+            android:id="@+id/su100"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="85sp"
+            android:fontFamily="@font/aaa"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/su10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:layout_marginRight="30dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="85sp"
+            android:fontFamily="@font/aaa"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/su1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ball"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="85sp"
+            android:fontFamily="@font/aaa"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:text="확   인"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aaa"
+        android:background="@drawable/button_click_color_long"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_retry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:text="다시 시작"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_click_color_long"
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/aaa"
+            android:background="#6B9E4B"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"/>
+
+</LinearLayout>
